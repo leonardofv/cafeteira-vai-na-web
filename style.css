@@ -121,6 +121,8 @@ main {
   }
   .firstContainer {
     position: fixed;
+    left: 60px;
+    right: 50px;
     top: 200px;
     height: 11.6vh;
     width: 70vw;
@@ -131,9 +133,8 @@ main {
   .firstContainer button {
     position: relative;
     top: 100px;
-    left: 50px;
-    right: 50px;
     width: 45vw;
+    left: 40px;
     padding: 20px;
   }
   .firstContainer .icons {
