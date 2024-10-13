@@ -125,12 +125,10 @@ main {
 
 @media screen and (min-width: 200px) and (max-width: 980px) {
     header {
-        border: 2px solid;
         height: 12.9vh;
         display: flex;
         flex-direction: column;
         nav {
-            border: 2px solid;
             width: 50vw;
         }
     }
@@ -145,7 +143,6 @@ main {
     .firstContainer {
         position: fixed;
         top: 200px;
-        border: 2px solid;
         height: 11.6vh;
         width: 70vw;
         p {
@@ -162,8 +159,8 @@ main {
         }
         .icons {
             position: relative;
-            top: 250px;
-            left: 120px;
+            top: 300px;
+            left: 100px;
         }
     }
 
