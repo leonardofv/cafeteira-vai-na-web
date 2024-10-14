@@ -159,12 +159,11 @@ main {
             display: flex;
             align-items: center;
             justify-content: center;
-            transform: scale(1);
+            transition: transform 0.3s;
         }
-        button:active {
-            transform: scale(1);
+        button:hover {
+            transform: none;
         }
-        
         .icons {
             position: relative;
             margin: auto;
@@ -212,10 +211,10 @@ main {
             display: flex;
             align-items: center;
             justify-content: center;
-            transform: scale(1);
+            transition: transform 0.3s;
         }
-        button:active {
-            transform: scale(1);
+        button:hover {
+            transform: none;
         }
         .icons {
             position: relative;
