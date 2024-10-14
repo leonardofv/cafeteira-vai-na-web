@@ -19,6 +19,9 @@ header {
     nav {
         width: 17.5vw;
         height: 3.3vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     ul {
@@ -55,25 +58,26 @@ main {
     p {
         font-size: 36px;
         font-weight: 700;
-        opacity: 0;  /* O texto começa invisível */
-        transform: translateX(-100%);  /* Começa 100% à esquerda da sua posição */
-        animation: slideIn 1s ease forwards;  /* Aplica a animação */
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: slideIn 1s ease forwards;
     }
 
     @keyframes slideIn {
         0% {
-          opacity: 0;
-          transform: translateX(-100%);  /* O texto está fora da tela à esquerda */
+            opacity: 0;
+            transform: translateX(-100%);
         }
+
         100% {
-          opacity: 1;
-          transform: translateX(0);  /* O texto chega à sua posição original */
+            opacity: 1;
+            transform: translateX(0);
         }
     }
 
     button {
         width: 16vw;
-        height: 9vh;
+        height: 7vh;
         background-color: #FCA60F;
         color: white;
         border: none;
@@ -113,8 +117,9 @@ main {
         width: 12vw;
         transform: scale(1);
         transition: transform 0.3s ease;
-        
+
     }
+
     img:hover {
         transform: scale(1.2);
         filter: blur(2px);
@@ -123,30 +128,23 @@ main {
 
 //----------------------------------------
 
-@media screen and (min-width: 200px) and (max-width: 980px) {
+@media screen and (max-width: 800px) {
     header {
         height: 12.9vh;
         display: flex;
         flex-direction: column;
+
         nav {
             width: 50vw;
         }
     }
 
-    main {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    
     .firstContainer {
         position: fixed;
-        left: 60px;
-        right: 50px;
         top: 200px;
         height: 11.6vh;
-        width: 70vw;
+        width: 80vw;
+
         p {
             font-size: 25px;
             text-align: center;
@@ -154,14 +152,15 @@ main {
 
         button {
             position: relative;
-            width: 55vw;
+            width: 45vw;
             padding: 20px;
             margin: auto;
-            left: 0;
-            right: 0;
             top: 40px;
-            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+
         .icons {
             position: relative;
             margin: auto;
@@ -174,5 +173,73 @@ main {
             display: none;
         }
     }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    header {
+        height: 12.8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 1px 1px 7px gray;
     
+        nav {
+            width: 22vw;
+            height: 3.3vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .firstContainer {
+        position: fixed;
+        margin-top: 100px;
+        top: 100px;
+        height: 11.6vh;
+        width: 70vw;
+
+        p {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        button {
+            position: relative;
+            width: 20vw;
+            padding: 20px;
+            margin: auto;
+            top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icons {
+            position: relative;
+            margin: auto;
+            margin-top: 200px;
+        }
+    }
+
+    .secondContainer {
+        img {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .firstContainer {
+        button {
+            width: 20vw;
+            height: 6vh;
+        }
+    }
 }
