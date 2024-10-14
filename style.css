@@ -73,6 +73,10 @@ main {
   margin-top: 20px;
   border-radius: 8px;
   cursor: pointer;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.3s;
 }
 .firstContainer button:hover {
@@ -107,9 +111,47 @@ main {
   filter: blur(2px);
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 650px) {
   header {
-    height: 12.9vh;
+    height: 15.9vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header nav {
+    width: 50vw;
+  }
+  .firstContainer {
+    position: fixed;
+    height: 11.6vh;
+    width: 80vw;
+  }
+  .firstContainer p {
+    font-size: 25px;
+    text-align: center;
+  }
+  .firstContainer button {
+    position: relative;
+    width: 50vw;
+    padding: 20px;
+    margin: auto;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: none;
+  }
+  .firstContainer .icons {
+    position: relative;
+    margin: auto;
+    margin-top: 150px;
+  }
+  .secondContainer img {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  header {
+    height: 15.9vh;
     display: flex;
     flex-direction: column;
   }
@@ -128,13 +170,14 @@ main {
   }
   .firstContainer button {
     position: relative;
-    width: 45vw;
+    width: 40vw;
     padding: 20px;
     margin: auto;
     top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: none;
   }
   .firstContainer .icons {
     position: relative;
@@ -143,61 +186,5 @@ main {
   }
   .secondContainer img {
     display: none;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  header {
-    height: 12.8vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 1px 1px 7px gray;
-  }
-  header nav {
-    width: 22vw;
-    height: 3.3vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .firstContainer {
-    position: fixed;
-    margin-top: 100px;
-    top: 100px;
-    height: 11.6vh;
-    width: 70vw;
-  }
-  .firstContainer p {
-    font-size: 25px;
-    text-align: center;
-  }
-  .firstContainer button {
-    position: relative;
-    width: 20vw;
-    padding: 20px;
-    margin: auto;
-    top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .firstContainer .icons {
-    position: relative;
-    margin: auto;
-    margin-top: 200px;
-  }
-  .secondContainer img {
-    display: none;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1300px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .firstContainer button {
-    width: 20vw;
-    height: 6vh;
   }
 }/*# sourceMappingURL=style.css.map */
