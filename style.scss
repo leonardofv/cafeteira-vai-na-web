@@ -107,7 +107,7 @@ main {
         transition: transform 0.3s;
     }
 
-    .icons-items:hover {
+    .icons-items:active {
         transform: scale(1.5);
     }
 }
