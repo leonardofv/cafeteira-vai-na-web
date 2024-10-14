@@ -138,7 +138,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: none;
+    transform: scale(1);
+  }
+  .firstContainer button:active {
+    transform: scale(1);
   }
   .firstContainer .icons {
     position: relative;
@@ -177,7 +180,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: none;
+    transform: scale(1);
+  }
+  .firstContainer button:active {
+    transform: scale(1);
   }
   .firstContainer .icons {
     position: relative;
